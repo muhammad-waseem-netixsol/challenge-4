@@ -5,6 +5,7 @@ const CartIcon = () => {
  
     const showmodal = () => {
         showModal(true);
+        document.body.style.overflow = "hidden";
     }
     return (
         <div className='text-2xl rounded-full py-1 flex justify-center items-center cursor-pointer'>
