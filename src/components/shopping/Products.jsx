@@ -47,11 +47,11 @@ const Products = () => {
     return (
         <div>
         <div className='grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-5'>
-            {paginatedProducts.length !== 0 && paginatedProducts.map(product => <div className='border max-a-max hover:shadow-lg rounded-lg' data-aos="flip-up">
+            {paginatedProducts.length !== 0 && paginatedProducts.map(product => <div className='border bg-black max-a-max hover:shadow-lg rounded-lg' data-aos="flip-up">
             <div className="h-[356px]  w-full flex justify-center items-center overflow-hidden">
                 <img className='block h-full w-full' src={`${product.category.image}`} alt="" />
             </div>
-            <div className='text-end p-2'><button  className='rounded-full bg-black text-white text-sm px-3 py-2 border-2 hover:shadow-xl  border-black hover:bg-white hover:text-black' onClick={()=> {addToCartHandler(product.id)}}>ADD TO CART</button></div>
+            <div className='text-end p-2'><button  className='rounded-full text-sm px-3 py-2 border-2 hover:shadow-xl  border-black bg-white text-black' onClick={()=> {addToCartHandler(product.id)}}>ADD TO CART</button></div>
             </div>)}
         </div>
         <div className='flex justify-center items-center md:gap-5 sm:gap-3 gap-1 py-10'>
