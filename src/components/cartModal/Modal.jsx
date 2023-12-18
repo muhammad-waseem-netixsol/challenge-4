@@ -5,6 +5,7 @@ const Modal = props => {
     const [modalIsOpened, setModalIsOpened] = useState(true);
     const onClose = () => {
         showModal(false);
+        document.body.style.overflow = "hidden";
     };
     return (
         <div className={` absolute left-0 top-0 min-h-screen w-screen p-0 m-0 box-border `} style={{background: "rgba(0, 0, 0, 0.8)"}} onClick={onClose}>
