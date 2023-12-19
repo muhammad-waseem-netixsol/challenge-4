@@ -9,7 +9,8 @@ const Navbar = (props) => {
         props.handleTop(status);
     }
     return (
-        <div className={` z-10 flex justify-between items-center py-3 ${navbarStick ? "fixed left-0 top-3 w-full z-40 p-5" : ""}`}>
+        <div className='h-[100px]'>
+        <div className={`z-10 flex justify-between items-center py-3 ${navbarStick ? "fixed left-0 top-3 w-full z-40 p-5" : ""}`}>
              <div data-aos="fade-left">
                 <NavSvg />
              </div>
@@ -19,6 +20,7 @@ const Navbar = (props) => {
                 {/* <button className='bg-black rounded-full px-5 py-2 text-base font-medium capitalize text-white'>cart <span>0</span></button> */}
                 <Hamburger showTopWrapper={topWrapperHandle}/>
              </div>   
+        </div>
         </div>
     );
 }
