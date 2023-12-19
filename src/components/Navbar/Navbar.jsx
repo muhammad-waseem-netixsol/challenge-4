@@ -13,10 +13,9 @@ const Navbar = (props) => {
              <div data-aos="fade-left">
                 <NavSvg />
              </div>
-             
              <div className='flex justify-center items-center gap-2' data-aos="fade-right">
-                <div><CartIcon /></div>
-                <button className={`bg-black rounded-full sm:px-5 px-3 py-2 text-base font-medium capitalize text-white hidden md:block ${navbarStick && "bg-white text-slate-950"}`}>contact us</button>
+                <div><CartIcon wrapper={navbarStick}/></div>
+                <button className={`bg-black rounded-full sm:px-5 px-3 py-2 text-base font-medium capitalize  hidden md:block ${navbarStick ? "bg-white text-slate-950" : "text-white"}`}>contact us</button>
                 {/* <button className='bg-black rounded-full px-5 py-2 text-base font-medium capitalize text-white'>cart <span>0</span></button> */}
                 <Hamburger showTopWrapper={topWrapperHandle}/>
              </div>   
