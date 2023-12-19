@@ -6,7 +6,7 @@ import Navbar from '../Navbar/Navbar';
 const TopWrapper = ({open}) => {
   console.log(open)
     return (
-        <div className={`md:h-screen max-w-screen w-screen transition bg-black z-10 duration-500 ease ${!open ? " absolute top-[-400%] left-0 h-screen" : "relative left-0 transition duration-500 ease"}`}>
+        <div className={`md:h-screen max-w-screen w-full rounded-3xl transition bg-black duration-500 ease ${!open ? " absolute top-[-400%] left-0 h-screen" : "absolute top-0 z-40 left-0 transition duration-500 ease"}`}>
         <div className='h-[100px]'></div>
       <div className="black text-white p-3 max-w-screen">
         <div className='flex w-full flex-col  border-t border-b sm:flex-row'>
