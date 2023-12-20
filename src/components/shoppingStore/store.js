@@ -14,8 +14,6 @@ const useProductStore = create((set) => ({
     fetch("https://api.escuelajs.co/api/v1/products").then(resp => resp.json()).then(response => {
         set({products: [...response], totalPages: Math.ceil(response.length / 6)})
     }).catch(err => console.log(err))
-      
-
       set({ totalPages: totalPagesCount, products: allProducts });
     } catch (error) {
       

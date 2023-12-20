@@ -1,5 +1,8 @@
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('./assets/mona-_sans/MonaSans/Mona-Sans.ttf') format('truetype'),
+}
 body {
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  background: white;
-
+  font-family: 'Mona Sans', sans-serif !important;
+  background: white; 
 }

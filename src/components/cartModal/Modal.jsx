@@ -2,14 +2,12 @@ import React, { useEffect, useState } from 'react';
 import useProductStore from '../shoppingStore/store';
 const Modal = props => {
     const {cart, showModal} = useProductStore();
-    const [modalIsOpened, setModalIsOpened] = useState(true);
     const onClose = () => {
         showModal(false);
-        document.body.style.overflowY = "auto";
-        document.body.style.overflowX = "hidden";
+        document.body.style.overflowY ="auto";
     };
     return (
-        <div className={` absolute left-0 top-0 min-h-screen w-screen p-0 m-0 box-border `} style={{background: "rgba(0, 0, 0, 0.8)"}} onClick={onClose}>
+        <div className={`absolute left-0 top-0 min-h-screen w-screen p-0 m-0 box-border `} style={{background: "rgba(0, 0, 0, 0.8)"}} onClick={onClose}>
         <div className={`z-40 rounded-2xl absolute left-[50%] top-[10%] translate-x-[-50%]  w-[90%] p-2 max-w-[700px] bg-white `} >
             <div className={`w-full h-full relative p-5`}>
             <button className='ml-auto block bg-red-400 rounded-md text-white px-1' onClick={onClose}>close</button>

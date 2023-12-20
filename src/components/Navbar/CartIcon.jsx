@@ -1,6 +1,6 @@
 import React from 'react';
 import useProductStore from "../shoppingStore/store";
-const CartIcon = ({wrapper}) => {
+const CartIcon = () => {
     const {cart, showModal} = useProductStore();
  
     const showmodal = () => {
@@ -9,7 +9,7 @@ const CartIcon = ({wrapper}) => {
     }
     return (
         <div className='text-2xl rounded-full py-1 flex justify-center items-center cursor-pointer'>
-           <button onClick={showmodal} className={`rounded-full w-full block sm:px-5 px-3 py-2 text-base font-medium capitalize  ${wrapper ? "bg-white text-black" : "text-white bg-black "}`}>cart ({cart.length > 0 ? cart.length : 0})</button>
+           <button onClick={showmodal} className={`bg-black rounded-full w-full block sm:px-5 px-3 py-2 text-base font-medium capitalize text-white`}>cart ({cart.length > 0 ? cart.length : 0})</button>
         </div>
     );
 }
